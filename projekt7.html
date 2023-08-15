@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Dom Studio - Projekt</title>
+    <link href="sidebar.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="projekt.css" rel="stylesheet">
+    <meta name="description" content="Projektowanie wnętrz">
+    <meta name="keywords" content="Dom Studio, architkekt, architektka, architektura, architektura wnętrz, projektowanie wnętrz, projekt wnętrz, projekt mieszkania, remont, renowacja, interior design">
+    <link rel="shortcut icon" href="icon.png">
+    <meta name="theme-color" content="#f3f2ee">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html"><img class="logo" src="logo.png" alt="Dom Studio"></a>
+            <button class="hamburger-button" onclick="toggleSidebar()">
+                <span class="hamburger-box" tabindex="-1">
+                    <span class="hamburger-line"></span>
+                </span>
+            </button>
+            <nav class="menu" id="overlay">
+                <ul>
+                    <li id="projekty"><a href="projekty.html">Projekty</a></li>
+                    <li id="oferta"><a href="oferta.html">Oferta</a></li>
+                    <li id="kontakt"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>  
+    </header>
+    <main>
+        <content>
+            <section>
+                <article class="panel">
+                    <div class="bar">
+                        <h1 class="title">Dom w Łodzi</h1>
+                        <span class="plus">＋</span>
+                    </div>
+                    <div class="text">
+                        <div class="description">
+                            <p>Projekt przytulnych wnętrz, w których życie rodzinne skupia się w kuchni i wokół stołu. Naturane materiały, stonowane kolory, lastryko i drewniane zabudowy powodują, że wnętrza są ciepłe i jasne. Nie bez znaczenia była też funkcjonalność i trwałość przyjętych rozwiąząń i mebli, tak aby każdy z mieszkańców mógł w pełni cieszyć się domem.</p>
+                            <div class="numbers">
+                                <p>2022 r.</p>
+                                <p>135 m<sup>2</sup></p>
+                            </div>
+                        </div>
+                        <div class="next-project">
+                            <button class="prev"><a href="projekt6.html">Poprzedni</a></button>
+                            <button class="next"><a href="projekt8.html">Następny</a></button>
+                        </div>
+                    </div>
+                </article>
+            </section>    
+            <figure>
+                <img src="projects/pro-7-1.jpeg">
+                <img src="projects/pro-7-2.jpeg">
+                <img src="projects/pro-7-3.jpeg">
+                <img src="projects/pro-7-4.jpeg">
+                <img src="projects/pro-7-5.jpeg">
+                <img src="projects/pro-7-6.jpeg">
+                <img src="projects/pro-7-7.jpeg">
+            </figure>
+        </content>
+    </main>
+    <script src="sidebar.js"></script>
+    <script src="panel.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+content {
+    row-gap: var(--row-gap);
+}
+
+.txt0 {
+    grid-column: 1 / -1;
+}
+
+.txt1,
+.txt2,
+.txt3,
+.txt4 {
+    grid-row: 2;
+}
+
+content > div > p,
+content > div > h2 {
+    margin-bottom: var(--margin);
+}
+
+h2 {
+    font-size: var(--font-small);
+    font-weight: 900;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1000px) { 
+    .txt0,
+    .txt1,
+    .txt2,
+    .txt3,
+    .txt4 {
+        grid-row: unset;
+        grid-column: 1 / -1;
+        width: 75%;
+    }
+
+    .txt2 {
+        margin-left: 7%;
+    }
+
+    .txt3 {
+        margin-left: 14%;
+    }
+
+    .txt4 {
+        margin-left: 21%;
+    }
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Dom Studio - Projekt</title>
+    <link href="sidebar.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="projekt.css" rel="stylesheet">
+    <meta name="description" content="Projektowanie wnętrz">
+    <meta name="keywords" content="Dom Studio, architkekt, architektka, architektura, architektura wnętrz, projektowanie wnętrz, projekt wnętrz, projekt mieszkania, remont, renowacja, interior design">
+    <link rel="shortcut icon" href="icon.png">
+    <meta name="theme-color" content="#f3f2ee">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html"><img class="logo" src="logo.png" alt="Dom Studio"></a>
+            <button class="hamburger-button" onclick="toggleSidebar()">
+                <span class="hamburger-box" tabindex="-1">
+                    <span class="hamburger-line"></span>
+                </span>
+            </button>
+            <nav class="menu" id="overlay">
+                <ul>
+                    <li id="projekty"><a href="projekty.html">Projekty</a></li>
+                    <li id="oferta"><a href="oferta.html">Oferta</a></li>
+                    <li id="kontakt"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>  
+    </header>
+    <main>
+        <content>
+            <section>
+                <article class="panel">
+                    <div class="bar">
+                        <h1 class="title">Mieszkanie w Łodzi</h1>
+                        <span class="plus">＋</span>
+                    </div>
+                    <div class="text">
+                        <div class="description">
+                            <p>Projekt zakładający przebudowę dwupokojowego mieszkania zlokalizowanego w typowym bloku z lat 70. Celem projektu była próba dostrzeżenia potencjału tego typu zabudowy, pozostawiając jej oryginalny  charakter przejawiający się w surowość, szczerości form i materiałów wynikających z wybranej technologii. </p>
+                            <div class="additional">
+                                <p><a href="https://kubakrysiak.pl/">Współpraca: Kuba Krysiak</a></p>
+                            </div>
+                            <div class="numbers">
+                                <p>2020 r.</p>
+                                <p>36 m<sup>2</sup></p>
+                            </div>
+                        </div>
+                        <div class="next-project">
+                            <button class="prev"><a href="projekt8.html">Poprzedni</a></button>
+                            <button class="next"><a href="projekt2.html">Następny</a></button>
+                        </div>
+                    </div>
+                </article>
+            </section>    
+            <figure>
+                <img src="projects/pro-1-1.jpeg">
+                <img src="projects/pro-1-2.jpeg">
+                <img src="projects/pro-1-3.jpeg">
+                <img src="projects/pro-1-4.jpeg">
+                <img src="projects/pro-1-5.jpeg">
+            </figure>
+        </content>
+    </main>
+    <script src="sidebar.js"></script>
+    <script src="panel.js"></script>
+</body>
+</html>

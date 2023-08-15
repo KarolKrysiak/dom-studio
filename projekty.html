@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Dom Studio - Projekty</title>
+    <link href="sidebar.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="projekty.css" rel="stylesheet">
+    <meta name="description" content="Projektowanie wnętrz">
+    <meta name="keywords" content="Dom Studio, architkekt, architektka, architektura, architektura wnętrz, projektowanie wnętrz, projekt wnętrz, projekt mieszkania, remont, renowacja, interior design">
+    <link rel="shortcut icon" href="icon.png">
+    <meta name="theme-color" content="#f3f2ee">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html"><img class="logo" src="logo.png" alt="Dom Studio"></a>
+            <button class="hamburger-button" onclick="toggleSidebar()">
+                <span class="hamburger-box" tabindex="-1">
+                    <span class="hamburger-line"></span>
+                </span>
+            </button>
+            <nav class="menu" id="overlay">
+                <ul>
+                    <li id="projekty"><a href="projekty.html">Projekty</a></li>
+                    <div id="new-container"></div>
+                    <li id="oferta"><a href="oferta.html">Oferta</a></li>
+                    <li id="kontakt"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            
+        </div>  
+    </header>
+    <main>
+        <content>
+            <ul class="menu-projects">
+                <li data-image-source="projekt1.html"><a href="projekt1.html">Mieszkanie w Łodzi</a></li>
+                <li data-image-source="projekt2.html"><a href="projekt2.html">Apartament Minimum</a></li>
+                <li data-image-source="projekt3.html"><a href="projekt3.html">Dom w Poznaniu</a></li>
+                <li data-image-source="projekt4.html"><a href="projekt4.html">Mieszkanie w Warszawie</a></li>
+                <li data-image-source="projekt5.html"><a href="projekt5.html">Mieszkanie w Poznaniu</a></li>
+                <li data-image-source="projekt6.html"><a href="projekt6.html">Apartament w Krakowie</a></li>
+                <li data-image-source="projekt7.html"><a href="projekt7.html">Dom w Łodzi</a></li>
+                <li data-image-source="projekt8.html"><a href="projekt8.html">Biuro w Łodzi</a></li>
+            </ul>
+        </content>
+        <div class="preview">
+            <img class="preview-image" src="" alt="Obrazek projektu">
+        </div>
+    </main>
+    <script src="sidebar.js"></script>
+    <script src="projekty.js"></script>
+</body>
+</html>
