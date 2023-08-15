@@ -60,7 +60,7 @@ nav > ul > :nth-last-child(2){
     }
 
     nav > ul {
-/*         row-gap: calc(2 * var(--row-gap)); */
+        row-gap: calc(2 * var(--row-gap));
     }
 
     nav li {
