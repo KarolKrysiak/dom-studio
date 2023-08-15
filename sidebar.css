@@ -32,7 +32,7 @@ nav li {
 }
 
 nav > ul > :nth-last-child(2){
-    align-self: end;
+/*     align-self: end; */
 } 
 
 /* MEDIA QUERY */
