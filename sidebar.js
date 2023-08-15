@@ -13,7 +13,7 @@ function toggleSidebar() {
             nav.style.display = "block";
             button.classList.add("hamburger--active");
             html.style.overflowY = "hidden";
-            themeColorMeta.setAttribute('content', '#667594');
+            themeColorMeta.setAttribute('content', '#9d5c44');
 
             // Zablokuj przewijanie na urządzeniach dotykowych
         document.addEventListener('touchmove', preventScroll, { passive: false });
