@@ -21,16 +21,11 @@
     left: 0;
 }
 
-main {
-    position: relative;
-}
-
 content {
     display: none;
 }
 
 .preview {
-    position: absolute;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: calc(-1 * var(--margin));
@@ -49,6 +44,10 @@ content {
     .menu-projects li {
         padding-bottom: 60px;
         padding-left: 60px;
+    }
+
+    #new-container {
+        display: none;
     }
 
     content {
