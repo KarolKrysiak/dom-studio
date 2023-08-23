@@ -14,12 +14,18 @@ content {
 }
 
 content > div > p,
+content > div > ul,
 content > div > h2 {
     margin-bottom: var(--margin);
+    font-size: var(--font-small);
+    line-height: var(--line-height-small);
+}
+
+content ul li::before {
+    content: "• ";
 }
 
 h2 {
-    font-size: var(--font-small);
     font-weight: 900;
 }
 

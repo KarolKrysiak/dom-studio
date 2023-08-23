@@ -36,7 +36,7 @@ content {
     width: calc(100% + var(--margin));
     height: auto;
     object-fit: cover;
-    /* transition: opacity 0.3s;  */
+
 }
 
 /* MEDIA QUERY */

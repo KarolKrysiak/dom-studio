@@ -15,8 +15,8 @@
     --margin-logo: 3vw;
     --font-primary: 1.2vw;
     --font-small: 1vw; 
-    --line-height: 1.6vw;
-    --line-height-small: 1.3vw;
+    --line-height: 1.35;
+    /* --line-height-small: 1.3vw; */
     --column-gap: 5px;
     --row-gap: 3vw;
     --color-black: #282828;
@@ -26,7 +26,7 @@
     --color-ginger: #9d5c44;
 }
 
-/* TYPOGRAPHY & COLORS */
+/* TYPOGRAPHY & COLORS & IMG */
 html {
     font-family: Proximanova;
     font-size: var(--font-primary);
@@ -35,6 +35,11 @@ html {
     line-height: var(--line-height);
     
     background: var(--color-cream);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
 }
 
 nav > ul {
@@ -117,17 +122,17 @@ footer {
 }
 
 a {
-    line-height: 0px;
+    line-height: 0px; /* dla img a href */
 }
 
 img {
     width: 100%;
+    
 }
 
 footer {
     display: none;
     align-items: end;
-    /* line-height: var(--line-height-small); */
 }
 
 #logo {
@@ -142,7 +147,6 @@ footer {
         --margin: 12px;
         --font-primary: 16px;
         --font-small: 14px; 
-        --line-height: 18px;
         --row-gap: 40px;
     }
 

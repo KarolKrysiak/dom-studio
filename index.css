@@ -62,7 +62,7 @@ content a::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--color-ginger);
+    background-color: #a87a52;
     opacity: 0; 
     transition: opacity 0.5s ease-in-out;
     z-index: 1;

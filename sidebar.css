@@ -25,7 +25,7 @@ nav > ul {
 
 nav li {
     font-size: var(--font-small);
-    font-weight: 900;
+    /* font-weight: 900; */
     align-self: auto;
     margin: 0;
     padding: 0;   
@@ -53,6 +53,7 @@ nav > ul > :nth-last-child(2){
         margin-top: unset;
         position: fixed;
         background: var(--color-ginger);
+        /* transition: background 0.5s ease; */
     }
 
     .menu a:hover {
@@ -110,7 +111,12 @@ nav > ul > :nth-last-child(2){
         transform: translateY(-50%);
         background: var(--color-black);
         
+        -webkit-transition: transform .3s .1s ease-in-out;
+        -moz-transition: transform .3s .1s ease-in-out;
+        -ms-transition: transform .3s .1s ease-in-out;
+        -o-transition: transform .3s .1s ease-in-out;
         transition: background .1s .1s ease-in-out;
+
     }
 
     .hamburger-line::before,
@@ -122,7 +128,12 @@ nav > ul > :nth-last-child(2){
         left: 0;
         background: var(--color-black);
         
+        -webkit-transition: transform .3s .1s ease-in-out;
+        -moz-transition: transform .3s .1s ease-in-out;
+        -ms-transition: transform .3s .1s ease-in-out;
+        -o-transition: transform .3s .1s ease-in-out;
         transition: transform .3s .1s ease-in-out;
+
     }
 
     .hamburger-line::before {
@@ -139,10 +150,18 @@ nav > ul > :nth-last-child(2){
     }
 
     .hamburger--active .hamburger-line::before {
+        -webkit-transform: translateY(10px) rotate(45deg);
+        -moz-transform: translateY(10px) rotate(45deg);
+        -ms-transform: translateY(10px) rotate(45deg);
+        -o-transform: translateY(10px) rotate(45deg);
         transform: translateY(10px) rotate(45deg);
     }
 
     .hamburger--active .hamburger-line::after {
+        -webkit-transform: translateY(-10px) rotate(-45deg);
+        -moz-transform: translateY(-10px) rotate(-45deg);
+        -ms-transform: translateY(-10px) rotate(-45deg);
+        -o-transform: translateY(-10px) rotate(-45deg);
         transform: translateY(-10px) rotate(-45deg);
     }
 }
