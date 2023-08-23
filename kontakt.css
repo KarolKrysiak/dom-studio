@@ -10,8 +10,9 @@ img {
 }
 
 .txt1 {
-    grid-column: 2 / -1;
+    grid-column: 2 / 4;
     margin-top: var(--margin);
+    width: 100%
 }
 
 .txt2 {
@@ -22,6 +23,12 @@ img {
     grid-row: 3;
     grid-column: 3;
     margin-top: calc(2 * var(--margin));
+}
+
+.form {
+    grid-column: 4;
+    grid-row: 1;
+    align-self: end;
 }
 
 footer {
@@ -39,7 +46,7 @@ footer {
         display: none;
     }
 
-    img, .txt1, .txt2, .txt3, .txt4 {
+    img, .txt1, .txt2, .txt3, .txt4, .form {
         grid-column: 1;
         grid-row: inherit;
         margin-top: 0;
@@ -53,4 +60,77 @@ footer {
     .txt3 {
         margin-left: 50%;
     }
+}
+
+/* 
+
+    FORM 
+
+    ––– IN PROGRESS 
+
+*/
+form {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: calc(0.9 * var(--font-small));
+    grid-row: span 2;
+}
+
+input[type="text"],
+textarea {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-bottom: 8px;
+    border: none;
+    border-bottom: 1px solid #282828;
+    background-color: transparent;
+    
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #282828;
+}
+
+/* Pozostawienie domyślnego koloru linii dla pól */
+input[type="text"],
+textarea {
+    border-color: #282828;
+}
+
+/* Zmiana koloru linii dla nieprawidłowych pól po kliknięciu przycisku "Wyślij" */
+form.invalid input:invalid,
+form.invalid textarea:invalid {
+    border-color: red;
+}
+
+textarea {
+    resize: vertical;
+    font: inherit;
+}
+
+::placeholder {
+    content: "";
+    color: var(--color-black);
+    font-size: calc(0.9 * var(--font-small));
+    font-family: Proximanova;
+}
+
+input[type="submit"] {
+    display: block;
+    width: auto;
+    background-color: transparent;
+    color: #282828;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+
+    color: var(--color-black);
+    font-size: calc(0.9 * var(--font-small));
+    font-family: Proximanova;
 }
