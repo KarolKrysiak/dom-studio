@@ -35,8 +35,9 @@ content {
     grid-column: 3 / -1;
     width: calc(100% + var(--margin));
     height: auto;
+    max-height: 30vw;
+    align-content: center;
     object-fit: cover;
-
 }
 
 /* MEDIA QUERY */
